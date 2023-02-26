@@ -8,9 +8,9 @@ int endfunc(int e, int a);
 
 int main(){
     //direction
-    //printf( "It's a console game.Rules are below:\n   1. You have three life.\n    2.You have three level and speed of snake increase in every level.\n");
+    // "It's a console game.Rules are below:\n   1. You have three life.\n    2.You have three level and speed of snake increase in every level.\n"
 
-    //printf("    3. Level will be increased when you get the score 50.\n  Now press any key to start the game!\n");
+    //   3. Level will be increased when you get the score 50.\n  Now press any key to start the game!\n"
     int gd,gm,rx=200,ry=200 ,x[200] = {},y[200] = {},d;
 
     //Food eaten
@@ -59,7 +59,7 @@ for(;;){
     //setfillstyle(1,2);
      }
     //bar(rx,ry,rx+10,ry+10);
-    setcolor(2);
+    setcolor(3);
     circle(rx+5, ry+5, 5);
     floodfill(rx+5, ry+5, 2);
 
@@ -134,7 +134,7 @@ int endfunc(int e,int a){
         printf("You died outside the boundary!!!\n");
     }
     else if(a== 1){
-        printf("You died into yourself!!!\n");
+        printf("You died by yourself!!!\n");
     }
     printf("Your score is : %d\n", e);
     getch();
